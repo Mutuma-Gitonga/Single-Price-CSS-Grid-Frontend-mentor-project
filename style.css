@@ -82,3 +82,16 @@ body {
   border-radius: 0 0 10px 0;
 }
 
+@media (max-width: 900px) {
+  .priceCard {
+    max-width: 375px;
+  }
+  .card--bg-white {
+    grid-column: 1;
+  }
+
+  .card--bg-lightcyan {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}
