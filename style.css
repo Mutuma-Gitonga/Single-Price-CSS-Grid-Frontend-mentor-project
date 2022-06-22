@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(204, 43%, 93%);
+  font-family: 'Special Elite', cursive, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.priceCard {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 200px auto;
+  padding: 20px;
+  width: 50%;
+  /* border-radius: 20px 20px 20px 20px; */
+}
+
+.card--bg-white {
+  background-color: white;
+  grid-column: 1 / 3;
+  padding: 20px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card--bg-white h3 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 15px;
+}
+
+.card--bg-white p.card__title {
+  color: hsl(71, 73%, 54%);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card--bg-darkcyan {
+  grid-column: 1;
+  grid-row: 2;
+  padding: 30px;
+  background-color: hsl(179, 62%, 43%);
+  color: white;
+  border-radius: 0 0 0 10px; 
+}
+
+.card--bg-darkcyan h3 {
+  margin-bottom: 10px;
+}
+
+.card--bg-darkcyan p {
+  margin-bottom: 10px;
+}
+
+.card--bg-darkcyan p>span {
+  font-size: 30px;
+}
+
+.signup_button {
+  margin-top: 10px;
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  padding: 10px 60px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.card--bg-lightcyan {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 20px;
+  color: white;
+  background-color: hsl(179, 62%, 50%);
+  border-radius: 0 0 10px 0;
+}
+
