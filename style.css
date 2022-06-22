@@ -13,7 +13,7 @@ body {
   line-height: 1.5;
 }
 
-.priceCard {
+.price-card {
   max-width: 1440px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
