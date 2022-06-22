@@ -90,7 +90,7 @@ body {
   border-radius: 0 0 10px 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .priceCard {
     max-width: 375px;
     grid-template-columns: 1fr;
