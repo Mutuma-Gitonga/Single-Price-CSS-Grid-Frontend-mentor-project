@@ -124,8 +124,198 @@ Below is the code snippet:
 </div>
 ```
 
-### Step 5: Coding the Stylesheet
+### Step 5: Creating the Stylesheet and Linking to HTML File
 With the HTML markdown done, I created a stylesheet file "style.css" on the git bash command line. Next, I linked the stylesheet to the html file using a link element in the head section, as in the code snippet below:
+
 ```HTML
 <link rel="stylesheet" href="style.css">
 ```
+
+### Step 6: Referencing the Challenge's Style Guide
+At this juncture, I referred to the style guide in the challenge document folder for the appropriate CSS property values to apply in the stylesheet. In particular, these specifications include:
+- **Layout widths:** Mobile (375px) AND Desktop (1440px).
+- **Primary colors:** Cyan: hsl(179, 62%, 43%) AND Bright Yellow: hsl(71, 73%, 54%)
+- **Neutral colors:** Light Gray: hsl(204, 43%, 93%) AND Grayish Blue: hsl(218, 22%, 67%)
+- **Typography:** Font-size (16px) AND font-family (Karla/Special Elite) 
+
+### Step 7: Importing Specified Font and Applying Universal/Global Styles
+I first imported the required font from Google fonts into the stylesheet using the code snippet below:
+
+```CSS
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+```
+
+Next, I used the universal selector (the asterisk symbol) to apply relevant values to the page's CSS box model. In addition, I used the body selector to apply global properties (that can be overridden) to all elements within it. Of relevance in the body properties was setting the specified background color, font-size, and font-family. See the code snippet below:
+```CSS
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(204, 43%, 93%);
+  font-family: 'Special Elite', cursive, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+```
+
+### Step 8: Styling the CSS Grid Container 
+Here, set the max-width specification (1440px). Most critical, I penned the mandatory display grid property and the accompanying property to declare the number of columns *(grid-template-columns.)* The margin and padding were set suitably. Finally, I set the width to 50% to fit the grid at the page's center rather than occupying the entire width. 
+
+See code snippet below:
+
+```CSS
+.price-card {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 200px auto;
+  padding: 20px;
+  width: 50%;
+  /* border-radius: 20px 20px 20px 20px; */
+}
+```
+  
+### Step 9: Styling the Three CSS Grid Items
+For all three Grid items, I specified the *border-radius* property to render the smooth item edges, specified the background colors as spelt out in the style guide, and specified the appropriate *grid-column* and *grid-row* properties. Other property values such as *padding, text color* and *margins* were added as desired. 
+
+The code below reflects these choices:
+
+```CSS
+.card--bg-white {
+  background-color: white;
+  grid-column: 1 / 3;
+  padding: 20px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card--bg-darkcyan {
+  grid-column: 1;
+  grid-row: 2;
+  padding: 30px;
+  background-color: hsl(179, 62%, 43%);
+  color: white;
+  border-radius: 0 0 0 10px; 
+}
+
+.card--bg-lightcyan {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 20px;
+  color: white;
+  background-color: hsl(179, 62%, 50%);
+  border-radius: 0 0 10px 0;
+}
+```
+
+### Step 10: Styling Elements within the "card--bg-white" Grid Item
+Following this, I now modified specific elements' styles including *h3* and the *p* element with class "card__title." 
+
+Refer to the code snippet below: 
+
+
+```CSS
+.card--bg-white h3 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 15px;
+}
+
+.card--bg-white p.card__title {
+  color: hsl(71, 73%, 54%);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+```
+
+### Step 11: Styling "card--bg-darkcyan" Grid Item's Elements
+Here, I styled the various elements including *h3, p, p(span),* the "signup_button" class, the anchor element, and applied a hover state to the sign up button. 
+
+Refer to the code snippet below:
+
+```CSS
+.card--bg-darkcyan h3 {
+  margin-bottom: 10px;
+}
+
+.card--bg-darkcyan p {
+  margin-bottom: 10px;
+}
+
+.card--bg-darkcyan p>span {
+  font-size: 30px;
+}
+
+.signup_button {
+  margin-top: 10px;
+  background-color: hsl(71, 73%, 54%);
+  padding: 10px 60px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.signup_button a {
+  text-decoration: none;
+  color: white;
+}
+
+.signup_button:hover {
+  background-color: hsl(71, 73%, 75%);
+}
+```
+
+### Step 12: The Inevitable Media Query
+Having styled the grid component to a beautiful stature, I proceeded to code in a media query to ensure that the grid layout is responsive for differently sized viewports as specified in the design document. 
+
+A standard max-width of 768px was specified to switch the grid layout flow to single column for smaller mobile screens. Therefore, the grid container has its *max-width, grid-template-columns,* and *width* properties altered. 
+
+In the same light, I altered the *grid-row* and *grid-columns* of two grid items. 
+
+Here is the media query code:
+
+```CSS
+@media (max-width: 768px) {
+  .priceCard {
+    max-width: 375px;
+    grid-template-columns: 1fr;
+    width: 100%; 
+    /* repeat(1, minmax(300px, 1fr)); */
+  }
+
+  /* Code needed here to disable hover effect for small screens. */
+
+  .card--bg-white {
+    grid-column: 1;
+  }
+
+  .card--bg-lightcyan {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}
+```
+
+As you will notice in the code snippet above, I was not able to disable the hover state for smaller screens, while keeping it enabled for desktop screens as the challenge specifications required. 
+
+**Please find the complete html file here and the CSS file here.** 
+
+### Continued Development
+Today was my first encounter with the BEM CSS class naming convention. BEM convention is an area I hope to polish in future web projects.
+
+Additionally, I need to familiarize with semantic HTML elements rather than relying on non-semantic elements since the former improves search engine optimization (SEO).
+
+### Useful Resource(s)
+The resources I include here are already linked within the document above. However, I believe they require a special shout out in their own section :)
+- [Brad Travery's CSS Grid Tutorial](https://www.youtube.com/watch?v=0xMQfnTU6oo): I have not found a more refreshing crash course on CSS Grid. From it, I learned about the BEM class naming convention, and understood how to use the browser's grid layout visualization in styling grid items.
+- [Mozilla Developer Network CSS Grid Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout): Every web developer has come across this priceless web dev documentation. While working through this challenge, I referred to it several times on various CSS Grid concepts to make them crystal clear.
+
+## Author
+- My blog: [devgitonga](devgitonga.hashnode.dev)
+- Frontend Mentor: [Mutuma-Gitonga](https://www.frontendmentor.io/profile/Mutuma-Gitonga) 
+- Twitter: [@devgitonga](https://twitter.com/devgitonga) 
+
+## Acknowledgements
+I am indebted to some tech twitter tweeps and coincidentally Brad Traversy for introducing me to this skill-sharpening Frontend Mentor website and inspiring me to take up a development challenge such as this one.  
