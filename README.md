@@ -1,6 +1,6 @@
 # Simple CSS Grid Component Challenge - Frontend Mentor
 # Introduction
-After watching [Brad Traversy's CSS Grid tutorial](https://www.youtube.com/watch?v=0xMQfnTU6oo), I sought a worthwhile development challenge on the question. In light of that, I found one on [Frontend Mentor](frontendmentor.io). I found it quite simple and I describe the development process briefly. 
+After watching [Brad Traversy's CSS Grid tutorial](https://www.youtube.com/watch?v=0xMQfnTU6oo), I sought a worthwhile development challenge on the question. In light of that, I found one on [Frontend Mentor](https://www.frontendmentor.io). I found it quite simple and I describe the development process briefly. 
 
 # Challenge Instructions
 Producing an optimal layout for different screen sizes as rendered in [this design](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc) from the Frontend mentor website. In addition, the challenge requires applying any desdired hover state change on the Sign Up button for the desktop view.
