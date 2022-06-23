@@ -289,9 +289,16 @@ Here is the media query code:
     grid-column: 1;
   }
 
+  .card--bg-darkcyan {
+    grid-column: 1;
+    grid-row: 2;
+    border-radius: 0 0 0 0; 
+  }
+
   .card--bg-lightcyan {
     grid-column: 1;
     grid-row: 3;
+    border-radius: 0 0 10px 10px;
   }
 }
 ```
