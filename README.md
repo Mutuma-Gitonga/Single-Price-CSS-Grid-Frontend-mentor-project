@@ -311,7 +311,8 @@ Today was my first encounter with the BEM CSS class naming convention. BEM conve
 
 Additionally, I need to familiarize with semantic HTML elements rather than relying on non-semantic elements since the former improves search engine optimization (SEO). 
 
-*Edit*
+*Edit:*
+
 *After posting the complete project on Frontend Mentor, one [Raj Prasad](https://www.frontendmentor.io/profile/RajSanjel) suggested a [useful resource](https://www.semrush.com/blog/semantic-html5-guide/) on semantic HTML tags.* 
 
 *In addition, he suggested a font change to match the specified format, which improved the UX dramatically.*   
