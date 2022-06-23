@@ -276,11 +276,10 @@ Here is the media query code:
 
 ```CSS
 @media (max-width: 768px) {
-  .priceCard {
-    max-width: 375px;
+  .price-card {
     grid-template-columns: 1fr;
-    width: 100%; 
-    /* repeat(1, minmax(300px, 1fr)); */
+    width: 75%;
+    margin: auto;
   }
 
   /* Code needed here to disable hover effect for small screens. */
