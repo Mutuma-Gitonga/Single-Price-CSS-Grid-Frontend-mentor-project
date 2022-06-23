@@ -94,7 +94,7 @@ body {
   .priceCard {
     max-width: 375px;
     grid-template-columns: 1fr;
-    width: 100%; 
+    width: 100%;
     /* repeat(1, minmax(300px, 1fr)); */
   }
 
@@ -104,8 +104,15 @@ body {
     grid-column: 1;
   }
 
+  .card--bg-darkcyan {
+    grid-column: 1;
+    grid-row: 2;
+    border-radius: 0 0 0 0; 
+  }
+
   .card--bg-lightcyan {
     grid-column: 1;
     grid-row: 3;
+    border-radius: 0 0 10px 10px;
   }
 }
