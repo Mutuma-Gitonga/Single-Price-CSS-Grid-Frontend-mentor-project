@@ -14,7 +14,7 @@ Producing an optimal layout for different screen sizes as rendered in [this desi
 
 **Chrome or Mozilla:** Any of these browsers will do to visualize the layout grids in the developer tools section. Such visualization is critical as explained in Traversy's tutorial, especially in specifying the column and row spans in the stylesheet.
 
-## My Solution Screenshots and hosted URLs
+## My Solution Screenshots and hosted site URL
 I took these screenshots using Mozilla Firefox's screenshot tool, available in its context sensitive menu.
 
 **Desktop view screenshot**
@@ -28,9 +28,7 @@ I took these screenshots using Mozilla Firefox's screenshot tool, available in i
 ![Mobile view screenshot](https://github.com/Mutuma-Gitonga/Single-Price-CSS-Grid-Frontend-mentor-project/blob/main/Solution%20Screenshots/mobile%20view%20screenshot.png)
 
 
-**Static site URL:**
-
-**Live site URL:**
+**Static site URL:** [Click here](https://simple-grid-component.tiiny.site/) to view the complete project as a website. 
 
 ## My Development Process
 ### Web Technologies and Principles Employed
