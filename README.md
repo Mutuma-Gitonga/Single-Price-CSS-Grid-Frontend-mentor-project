@@ -304,7 +304,7 @@ Here is the media query code:
 
 As you will notice in the code snippet above, I was not able to disable the hover state for smaller screens, while keeping it enabled for desktop screens as the challenge specifications required. 
 
-**Please find the complete html file here and the CSS file here.** 
+**Please find the complete [html file here](https://github.com/Mutuma-Gitonga/Single-Price-CSS-Grid-Frontend-mentor-project/blob/main/index.html) and the [CSS one here](https://github.com/Mutuma-Gitonga/Single-Price-CSS-Grid-Frontend-mentor-project/blob/main/style.css).** 
 
 ### Continued Development
 Today was my first encounter with the BEM CSS class naming convention. BEM convention is an area I hope to polish in future web projects.
