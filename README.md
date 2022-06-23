@@ -309,7 +309,12 @@ As you will notice in the code snippet above, I was not able to disable the hove
 ### Continued Development
 Today was my first encounter with the BEM CSS class naming convention. BEM convention is an area I hope to polish in future web projects.
 
-Additionally, I need to familiarize with semantic HTML elements rather than relying on non-semantic elements since the former improves search engine optimization (SEO).
+Additionally, I need to familiarize with semantic HTML elements rather than relying on non-semantic elements since the former improves search engine optimization (SEO). 
+
+*Edit*
+*After posting the complete project on Frontend Mentor, one [Raj Prasad](https://www.frontendmentor.io/profile/RajSanjel) suggested a [useful resource](https://www.semrush.com/blog/semantic-html5-guide/) on semantic HTML tags.* 
+
+*In addition, he suggested a font change to match the specified format, which improved the UX dramatically.*   
 
 ### Useful Resource(s)
 The resources I include here are already linked within the document above. However, I believe they require a special shout out in their own section :)
