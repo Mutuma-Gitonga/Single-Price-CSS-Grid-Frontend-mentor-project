@@ -325,7 +325,7 @@ The resources I include here are already linked within the document above. Howev
 ## Author
 - My blog: [devgitonga](devgitonga.hashnode.dev)
 - Frontend Mentor: [Mutuma-Gitonga](https://www.frontendmentor.io/profile/Mutuma-Gitonga) 
-- Twitter: [@devgitonga](https://twitter.com/gitongacodes) 
+- Twitter: [@gitongacodes](https://twitter.com/gitongacodes) 
 
 ## Acknowledgements
 I am indebted to some tech twitter tweeps and coincidentally Brad Traversy for introducing me to this skill-sharpening Frontend Mentor website and inspiring me to take up a development challenge such as this one.  
